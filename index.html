@@ -9,27 +9,59 @@
 <body>
   <header>
     <h1>Latsports ⚽</h1>
-    <p>Futbol de Alta Costura</p>
+    <nav>
+      <a href="#tipos">Camisetas</a>
+      <a href="#carrito">Carrito</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Sobre nosotros</h2>
-      <p>En Latsports nos destacamos por ofrecer camisetas deportivas con la seguridad, confianza y rapidez en la entrega que nuestros clientes necesitan</p>
-    </section>
+  <!-- Sobre nosotros -->
+  <section class="intro">
+    <h2>Sobre nosotros</h2>
+    <p>En Latsports somos una marca de confianza que ofrece camisetas deportivas seguras, de calidad y con entrega rápida, para que vivas tu pasión por el fútbol sin preocupaciones.</p>
+  </section>
 
-  <section class="producto">
-  <h2>Camisetas deportivas</h2>
-  <img src="camiseta-latsports.jpg" alt="Camiseta deportiva Latsports" style="max-width:300px; border-radius:10px; margin:15px 0;">
-  <p>Nuestras camisetas están diseñadas para sentir la pasión del fútbol: cómodas, resistentes y con el estilo que te hace vivir cada jugada con orgullo.</p>
-</section>
+  <!-- Tipos de camisetas -->
+  <section id="tipos" class="producto">
+    <h2>Tipos de camisetas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Versión Jugador</h3>
+        <p>Ajuste profesional y telas de alto rendimiento.</p>
+        <button onclick="agregarAlCarrito('Camiseta Jugador')">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <h3>Versión Fan</h3>
+        <p>Diseño cómodo para apoyar al equipo en cualquier lugar.</p>
+        <button onclick="agregarAlCarrito('Camiseta Fan')">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <h3>Versión Retro</h3>
+        <p>Estilo clásico que revive la historia del fútbol.</p>
+        <button onclick="agregarAlCarrito('Camiseta Retro')">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
 
-        
-        </section>
-  </main>
+  <!-- Carrito -->
+  <section id="carrito" class="producto">
+    <h2>🛒 Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="intro">
+    <h2>Contacto</h2>
+    <p>📧 Instagram: <a href="https://www.instagram.com/latsportscol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">LatSportsCol</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/573011089760" target="_blank">+57 301 108 97 60</a></p>
+  </section>
 
   <footer>
     <p>© 2025 Latsports - Todos los derechos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
